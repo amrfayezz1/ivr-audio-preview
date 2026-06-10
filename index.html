@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G Developments - IVR Audio Manager</title>
+    <link rel="stylesheet" href="ivr_viewer.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-title">G Developments</div>
+                <div class="sidebar-subtitle">IVR Manager</div>
+            </div>
+            <div class="sidebar-projects" id="projectList"></div>
+        </div>
+
+        <div class="main-content">
+            <div class="header">
+                <div class="header-top">
+                    <div>
+                        <h1 class="header-title" id="projectTitle">Select a Project</h1>
+                        <p class="header-meta badge">
+                            <span id="scriptCount">0</span> scripts
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="scripts-grid" id="scriptsGrid">
+                    <div class="empty-state">
+                        <div class="empty-icon">📋</div>
+                        <div class="empty-text">Select a project from the sidebar to view scripts</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="audio-player" id="audioPlayer">
+        <div class="player-content">
+            <div class="player-info">
+                <div class="player-title" id="playerTitle">Now Playing</div>
+                <div class="player-subtitle" id="playerSubtitle">Select an audio to play</div>
+            </div>
+            <audio id="audioElement" controls style="display: none;"></audio>
+        </div>
+    </div>
+
+    <script src="ivr_data.js"></script>
+    <script src="ivr_viewer.js"></script>
+</body>
+
+</html>
