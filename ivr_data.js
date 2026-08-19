@@ -42,7 +42,7 @@ window.ivrData = {
     },
     "project_selection_einbay": {
       "en": "For Einbay, please press 4",
-      "ar": "للاستفسار عن عين باي، برجاء الضغط على رقم 4",
+      "ar": "لِلاسْتِفْسار عَن عِيِن باي، بِرَجاء الضَّغْط عَلى رَقَم ٤",
       "audio": {
         "en": true,
         "ar": true
