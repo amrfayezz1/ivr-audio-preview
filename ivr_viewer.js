@@ -3,6 +3,11 @@ const ivrScripts = window.ivrData;
 const LANG_DIR = { en: 'en_US', ar: 'ar_EG' };
 const LANG_LABEL = { en: '🇬🇧 English', ar: '🇸🇦 Arabic' };
 
+// Single source of truth for clip paths, shared by playback and download.
+function audioPath(project, key, language) {
+    return `${LANG_DIR[language]}/${project}/${key}_${language}.wav`;
+}
+
 let currentProject = null;
 
 function formatKey(key) {
@@ -33,6 +38,19 @@ function selectProject(project, itemEl) {
     const scripts = ivrScripts[project];
     document.getElementById('scriptCount').textContent = Object.keys(scripts).length;
     renderScripts(project);
+}
+
+// A real <a download> rather than a JS handler: the browser saves the file
+// directly, and the `download` attribute renames it to something meaningful
+// instead of the terse on-disk name.
+function downloadBtn(project, key, language, exists) {
+    const label = language === 'en' ? 'English' : 'Arabic';
+    if (!exists) {
+        return `<span class="download-btn disabled" title="No ${label} audio available">⇓</span>`;
+    }
+    const href = audioPath(project, key, language);
+    const name = `${project}_${key}_${language}.wav`;
+    return `<a class="download-btn" href="${href}" download="${name}" title="Download ${label} audio">⇓</a>`;
 }
 
 function renderScripts(project) {
@@ -67,8 +85,14 @@ function renderScripts(project) {
                 <div class="script-content arabic">${content.ar || 'N/A'}</div>
             </div>
             <div class="script-buttons">
-                <button class="${enBtnCls}" data-language="en" data-key="${key}" ${audio.en ? '' : 'disabled'}>${enLabel}</button>
-                <button class="${arBtnCls}" data-language="ar" data-key="${key}" ${audio.ar ? '' : 'disabled'}>${arLabel}</button>
+                <div class="btn-pair">
+                    <button class="${enBtnCls}" data-language="en" data-key="${key}" ${audio.en ? '' : 'disabled'}>${enLabel}</button>
+                    ${downloadBtn(project, key, 'en', audio.en)}
+                </div>
+                <div class="btn-pair">
+                    <button class="${arBtnCls}" data-language="ar" data-key="${key}" ${audio.ar ? '' : 'disabled'}>${arLabel}</button>
+                    ${downloadBtn(project, key, 'ar', audio.ar)}
+                </div>
             </div>
         `;
         grid.appendChild(card);
@@ -83,7 +107,7 @@ function renderScripts(project) {
 }
 
 function playAudio(key, language) {
-    const path = `${LANG_DIR[language]}/${currentProject}/${key}_${language}.wav`;
+    const path = audioPath(currentProject, key, language);
     const audioEl = document.getElementById('audioElement');
     document.getElementById('playerTitle').textContent = formatKey(key);
     document.getElementById('playerSubtitle').textContent = LANG_LABEL[language];
