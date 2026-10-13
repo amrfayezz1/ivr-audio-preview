@@ -99,7 +99,7 @@ window.ivrData = {
       }
     },
     "channel_customer_service": {
-      "en": "To speak to a Customer Service representative, please press 2.",
+      "en": "To speak to a Customer Excellence representative, please press 2.",
       "ar": "للتحدث إلى أحد ممثلي خدمة العملاء، برجاء الضغط على رقم 2.",
       "audio": {
         "en": true,
@@ -139,23 +139,15 @@ window.ivrData = {
       }
     },
     "after_hours_sales": {
-      "en": "Thank you for calling IVY Sales. Our formal business hours are from 9:30 am to 4:30 pm, Sundays to Thursdays. To leave us a voice message, please press 0 and one of our representatives will return your call within the next business day.",
-      "ar": "شكراً لاتصالك بمبيعات آيفي. ساعات العمل الرسمية من التاسعة والنصف صباحاً حتى الرابعة والنصف مساءً من الأحد إلى الخميس. لترك رسالة صوتية برجاء الضغط على 0 وسيقوم أحد ممثلينا بالتواصل معكم خلال يوم العمل التالي.",
+      "en": "Thank you for calling IVY Sales. Our formal business hours are from 10:00 am to 6:00 pm, Sundays to Thursdays. Please call us again within the next business day.",
+      "ar": "شكراً لاتصالك بمبيعات آيفي. ساعات العمل الرسمية من العاشرة صباحاً حتى السادسة مساءً من الأحد إلى الخميس. برجاء الاتصال بنا مرة أخرى خلال يوم العمل التالي.",
       "audio": {
-        "en": true,
-        "ar": true
-      }
-    },
-    "after_hours_sales_seasonal": {
-      "en": "Thank you for calling IVY Sales. Our formal business hours are from 10:00 am to 6:00 pm, Sundays to Thursdays. To leave us a voice message, please press 0 and one of our representatives will return your call within the next business day.",
-      "ar": "شكراً لاتصالك بمبيعات آيفي. ساعات العمل الرسمية من العاشرة صباحاً حتى السادسة مساءً من الأحد إلى الخميس. لترك رسالة صوتية برجاء الضغط على 0 وسيقوم أحد ممثلينا بالتواصل معكم خلال يوم العمل التالي.",
-      "audio": {
-        "en": true,
-        "ar": true
+        "en": false,
+        "ar": false
       }
     },
     "after_hours_customer_service": {
-      "en": "Thank you for calling IVY Customer Service. Our formal working hours are from 9:30 am to 4:30 pm, Sundays to Thursdays.",
+      "en": "Thank you for calling IVY Customer Excellence. Our formal working hours are from 9:30 am to 4:30 pm, Sundays to Thursdays.",
       "ar": "شكراً لاتصالك بخدمة عملاء آيفي. ساعات العمل الرسمية من التاسعة والنصف صباحاً حتى الرابعة والنصف مساءً من الأحد إلى الخميس.",
       "audio": {
         "en": true,
@@ -163,7 +155,7 @@ window.ivrData = {
       }
     },
     "after_hours_customer_service_seasonal": {
-      "en": "Thank you for calling IVY Customer Service. Our formal working hours are from 10:00 am to 6:00 pm, Sundays to Thursdays.",
+      "en": "Thank you for calling IVY Customer Excellence. Our formal working hours are from 10:00 am to 6:00 pm, Sundays to Thursdays.",
       "ar": "شكراً لاتصالك بخدمة عملاء آيفي. ساعات العمل الرسمية من العاشرة صباحاً حتى السادسة مساءً من الأحد إلى الخميس.",
       "audio": {
         "en": true,
@@ -171,7 +163,7 @@ window.ivrData = {
       }
     },
     "ramadan_customer_service": {
-      "en": "Thank you for calling IVY Customer Service. Our Ramadan working hours are from 9:30 am to 2:30 pm, Sundays to Thursdays.",
+      "en": "Thank you for calling IVY Customer Excellence. Our Ramadan working hours are from 9:30 am to 2:30 pm, Sundays to Thursdays.",
       "ar": "شكراً لاتصالك بخدمة عملاء آيفي. ساعات العمل خلال شهر رمضان المبارك من الساعة التاسعة والنصف صباحاً حتى الثانية والنصف مساءً من الأحد إلى الخميس.",
       "audio": {
         "en": true,
@@ -179,8 +171,16 @@ window.ivrData = {
       }
     },
     "maintenance": {
-      "en": "Thank you for calling IVY Customer Service. There are maintenance works at the company that affect the electrical current. To leave us your request, please reach us at the email address: customerexcellence@ivy-ng.com, or please call us within the next business day.",
+      "en": "Thank you for calling IVY Customer Excellence. There are maintenance works at the company that affect the electrical current. To leave us your request, please reach us at the email address: customerexcellence@ivy-ng.com, or please call us within the next business day.",
       "ar": "شكراً لاتصالك بخدمة عملاء آيفي. توجد حالياً أعمال صيانة بالشركة تؤثر على التيار الكهربائي. لترك طلبك، برجاء التواصل معنا عبر البريد الإلكتروني: customerexcellence@ivy-ng.com، أو الاتصال بنا خلال يوم العمل التالي.",
+      "audio": {
+        "en": true,
+        "ar": true
+      }
+    },
+    "maintenance_sales": {
+      "en": "Thank you for calling IVY Sales. There are maintenance works at the company that affect the electrical current. To leave us your request, please reach us at the email address: customerexcellence@ivy-ng.com, or please call us within the next business day.",
+      "ar": "شكراً لاتصالك بمبيعات آيفي. توجد حالياً أعمال صيانة بالشركة تؤثر على التيار الكهربائي. لترك طلبك، برجاء التواصل معنا عبر البريد الإلكتروني: customerexcellence@ivy-ng.com، أو الاتصال بنا خلال يوم العمل التالي.",
       "audio": {
         "en": true,
         "ar": true
@@ -205,7 +205,7 @@ window.ivrData = {
       }
     },
     "channel_customer_service": {
-      "en": "To speak to a Customer Service representative, please press 2.",
+      "en": "To speak to a Customer Excellence representative, please press 2.",
       "ar": "للتحدث إلى أحد ممثلي خدمة العملاء، برجاء الضغط على رقم 2.",
       "audio": {
         "en": true,
@@ -245,32 +245,48 @@ window.ivrData = {
       }
     },
     "after_hours_regular": {
-      "en": "Thank you for calling Seashell Customer Service. Our formal working hours are from 9:30 am to 4:30 pm, Sundays to Thursdays. If this is an emergency, please hold; your call will be diverted to the operations room.",
-      "ar": "شكراً لاتصالك بإدارة خدمة عملاء سي شيل. مواعيد العمل الرسمية من التاسعة والنصف صباحاً حتى الرابعة والنصف مساءً من الأحد إلى الخميس. في حالة الطوارئ برجاء الانتظار، سيتم تحويل مكالمتكم لغرفة العمليات.",
+      "en": "Thank you for calling Seashell Customer Excellence. Our formal working hours are from 9:30 am to 4:30 pm, Sundays to Thursdays. For emergency, please press 0.",
+      "ar": "شكراً لاتصالك بإدارة خدمة عملاء سي شيل. مواعيد العمل الرسمية من التاسعة والنصف صباحاً حتى الرابعة والنصف مساءً من الأحد إلى الخميس. للطوارئ، برجاء الضغط على رقم 0.",
       "audio": {
-        "en": true,
-        "ar": true
+        "en": false,
+        "ar": false
       }
     },
     "after_hours_summer": {
-      "en": "Thank you for calling Seashell Customer Service. Our formal working hours are from 10:00 am to 6:00 pm. If this is an emergency, please hold; your call will be diverted to the operations room.",
-      "ar": "شكراً لاتصالك بإدارة خدمة عملاء سي شيل. مواعيد العمل الرسمية من العاشرة صباحاً حتى السادسة مساءً. في حالة الطوارئ برجاء الانتظار، سيتم تحويل مكالمتكم لغرفة العمليات.",
+      "en": "Thank you for calling Seashell Customer Excellence. Our formal working hours are from 10:00 am to 6:00 pm, all week days. For emergency, please press 0.",
+      "ar": "شكراً لاتصالك بإدارة خدمة عملاء سي شيل. مواعيد العمل الرسمية من العاشرة صباحاً حتى السادسة مساءً طوال أيام الأسبوع. للطوارئ، برجاء الضغط على رقم 0.",
       "audio": {
-        "en": true,
-        "ar": true
+        "en": false,
+        "ar": false
       }
     },
     "ramadan": {
-      "en": "Thank you for calling Seashell Customer Service. Our Ramadan working hours are from 9:30 am to 2:30 pm, Sundays to Thursdays.",
-      "ar": "شكراً لاتصالك بخدمة عملاء سي شيل. ساعات العمل خلال شهر رمضان المبارك من الساعة التاسعة والنصف صباحاً حتى الثانية والنصف مساءً من الأحد إلى الخميس.",
+      "en": "Thank you for calling Seashell Customer Excellence. Our Ramadan working hours are from 9:30 am to 2:30 pm, Sundays to Thursdays. For emergency, please press 0.",
+      "ar": "شكراً لاتصالك بخدمة عملاء سي شيل. ساعات العمل خلال شهر رمضان المبارك من الساعة التاسعة والنصف صباحاً حتى الثانية والنصف مساءً من الأحد إلى الخميس. للطوارئ، برجاء الضغط على رقم 0.",
+      "audio": {
+        "en": false,
+        "ar": false
+      }
+    },
+    "maintenance": {
+      "en": "Thank you for calling Seashell Customer Excellence. There are maintenance works at the company that affect the electrical current. To leave us your request, please reach us at the email address: customerexcellence@seashellbeats.com or customerexcellence@seashellplaya.com, or please call us within the next business day.",
+      "ar": "شكراً لاتصالك بخدمة عملاء سي شيل. توجد حالياً أعمال صيانة بالشركة تؤثر على التيار الكهربائي. لترك طلبك، برجاء التواصل معنا عبر البريد الإلكتروني: customerexcellence@seashellbeats.com أو customerexcellence@seashellplaya.com، أو الاتصال بنا خلال يوم العمل التالي.",
       "audio": {
         "en": true,
         "ar": true
       }
     },
-    "maintenance": {
-      "en": "Thank you for calling Seashell Customer Service. There are maintenance works at the company that affect the electrical current. To leave us your request, please reach us at the email address: customerexcellence@seashellbeats.com or customerexcellence@seashellplaya.com, or please call us within the next business day.",
-      "ar": "شكراً لاتصالك بخدمة عملاء سي شيل. توجد حالياً أعمال صيانة بالشركة تؤثر على التيار الكهربائي. لترك طلبك، برجاء التواصل معنا عبر البريد الإلكتروني: customerexcellence@seashellbeats.com أو customerexcellence@seashellplaya.com، أو الاتصال بنا خلال يوم العمل التالي.",
+    "after_hours_sales": {
+      "en": "Thank you for calling Seashell Sales. Our formal business hours are from 10:00 am to 6:00 pm, Sundays to Thursdays. Please call us again within the next business day.",
+      "ar": "شكراً لاتصالك بمبيعات سي شيل. ساعات العمل الرسمية من العاشرة صباحاً حتى السادسة مساءً من الأحد إلى الخميس. برجاء الاتصال بنا مرة أخرى خلال يوم العمل التالي.",
+      "audio": {
+        "en": false,
+        "ar": false
+      }
+    },
+    "maintenance_sales": {
+      "en": "Thank you for calling Seashell Sales. There are maintenance works at the company that affect the electrical current. To leave us your request, please reach us at the email address: customerexcellence@seashellbeats.com or customerexcellence@seashellplaya.com, or please call us within the next business day.",
+      "ar": "شكراً لاتصالك بمبيعات سي شيل. توجد حالياً أعمال صيانة بالشركة تؤثر على التيار الكهربائي. لترك طلبك، برجاء التواصل معنا عبر البريد الإلكتروني: customerexcellence@seashellbeats.com أو customerexcellence@seashellplaya.com، أو الاتصال بنا خلال يوم العمل التالي.",
       "audio": {
         "en": true,
         "ar": true
@@ -295,7 +311,7 @@ window.ivrData = {
       }
     },
     "channel_customer_service": {
-      "en": "To speak to a Customer Service representative, please press 2.",
+      "en": "To speak to a Customer Excellence representative, please press 2.",
       "ar": "للتحدث إلى أحد ممثلي خدمة العملاء، برجاء الضغط على رقم 2.",
       "audio": {
         "en": true,
@@ -335,35 +351,51 @@ window.ivrData = {
       }
     },
     "after_hours_customer_service": {
-      "en": "Thank you for calling Playa Customer Service. Our formal working hours are from 9:30 am to 4:30 pm, Sundays to Thursdays.",
-      "ar": "شكراً لاتصالك بإدارة خدمة عملاء بلايا. مواعيد العمل الرسمية من التاسعة والنصف صباحاً حتى الرابعة والنصف مساءً من الأحد إلى الخميس.",
+      "en": "Thank you for calling Playa Customer Excellence. Our formal working hours are from 9:30 am to 4:30 pm, Sundays to Thursdays. For emergency, please press 0.",
+      "ar": "شكراً لاتصالك بإدارة خدمة عملاء بلايا. مواعيد العمل الرسمية من التاسعة والنصف صباحاً حتى الرابعة والنصف مساءً من الأحد إلى الخميس. للطوارئ، برجاء الضغط على رقم 0.",
       "audio": {
-        "en": true,
-        "ar": true
+        "en": false,
+        "ar": false
       }
     },
     "after_hours_customer_service_seasonal": {
-      "en": "Thank you for calling Playa Customer Service. Our formal working hours are from 10:00 am to 6:00 pm, Sundays to Thursdays.",
-      "ar": "شكراً لاتصالك بإدارة خدمة عملاء بلايا. مواعيد العمل الرسمية من العاشرة صباحاً حتى السادسة مساءً من الأحد إلى الخميس.",
+      "en": "Thank you for calling Playa Customer Excellence. Our formal working hours are from 10:00 am to 6:00 pm, all week days. For emergency, please press 0.",
+      "ar": "شكراً لاتصالك بإدارة خدمة عملاء بلايا. مواعيد العمل الرسمية من العاشرة صباحاً حتى السادسة مساءً طوال أيام الأسبوع. للطوارئ، برجاء الضغط على رقم 0.",
       "audio": {
-        "en": true,
-        "ar": true
+        "en": false,
+        "ar": false
       }
     },
     "ramadan": {
-      "en": "Thank you for calling Playa Customer Service. Our Ramadan working hours are from 9:30 am to 2:30 pm, Sundays to Thursdays.",
-      "ar": "شكراً لاتصالك بخدمة عملاء بلايا. ساعات العمل خلال شهر رمضان المبارك من الساعة التاسعة والنصف صباحاً حتى الثانية والنصف مساءً من الأحد إلى الخميس.",
+      "en": "Thank you for calling Playa Customer Excellence. Our Ramadan working hours are from 9:30 am to 2:30 pm, Sundays to Thursdays. For emergency, please press 0.",
+      "ar": "شكراً لاتصالك بخدمة عملاء بلايا. ساعات العمل خلال شهر رمضان المبارك من الساعة التاسعة والنصف صباحاً حتى الثانية والنصف مساءً من الأحد إلى الخميس. للطوارئ، برجاء الضغط على رقم 0.",
       "audio": {
-        "en": true,
-        "ar": true
+        "en": false,
+        "ar": false
       }
     },
     "maintenance": {
-      "en": "Thank you for calling Playa Customer Service. There are maintenance works at the company that affect the electrical current. To leave us your request, please reach us at the email address: customerexcellence@seashellplaya.com, or please call us within the next business day.",
+      "en": "Thank you for calling Playa Customer Excellence. There are maintenance works at the company that affect the electrical current. To leave us your request, please reach us at the email address: customerexcellence@seashellplaya.com, or please call us within the next business day.",
       "ar": "شكراً لاتصالك بخدمة عملاء بلايا. توجد حالياً أعمال صيانة بالشركة تؤثر على التيار الكهربائي. لترك طلبك، برجاء التواصل معنا عبر البريد الإلكتروني: customerexcellence@seashellplaya.com، أو الاتصال بنا خلال يوم العمل التالي.",
       "audio": {
         "en": true,
         "ar": true
+      }
+    },
+    "after_hours_sales": {
+      "en": "Thank you for calling Playa Sales. Our formal business hours are from 10:00 am to 6:00 pm, Sundays to Thursdays. Please call us again within the next business day.",
+      "ar": "شكراً لاتصالك بمبيعات بلايا. ساعات العمل الرسمية من العاشرة صباحاً حتى السادسة مساءً من الأحد إلى الخميس. برجاء الاتصال بنا مرة أخرى خلال يوم العمل التالي.",
+      "audio": {
+        "en": false,
+        "ar": false
+      }
+    },
+    "maintenance_sales": {
+      "en": "Thank you for calling Playa Sales. There are maintenance works at the company that affect the electrical current. To leave us your request, please reach us at the email address: customerexcellence@seashellplaya.com, or please call us within the next business day.",
+      "ar": "شكراً لاتصالك بمبيعات بلايا. توجد حالياً أعمال صيانة بالشركة تؤثر على التيار الكهربائي. لترك طلبك، برجاء التواصل معنا عبر البريد الإلكتروني: customerexcellence@seashellplaya.com، أو الاتصال بنا خلال يوم العمل التالي.",
+      "audio": {
+        "en": false,
+        "ar": false
       }
     }
   },
@@ -385,11 +417,11 @@ window.ivrData = {
       }
     },
     "channel_customer_service": {
-      "en": "To speak to a Customer Service representative, please press 2.",
+      "en": "To speak to a Customer Excellence representative, please press 2.",
       "ar": "للتحدث إلى أحد ممثلي خدمة العملاء، برجاء الضغط على رقم 2.",
       "audio": {
-        "en": true,
-        "ar": true
+        "en": false,
+        "ar": false
       }
     },
     "hold_message": {
@@ -425,35 +457,51 @@ window.ivrData = {
       }
     },
     "after_hours_customer_service": {
-      "en": "Thank you for calling Einbay Customer Service. Our formal working hours are from 9:30 am to 4:30 pm, Sundays to Thursdays.",
+      "en": "Thank you for calling Einbay Customer Excellence. Our formal working hours are from 9:30 am to 4:30 pm, Sundays to Thursdays.",
       "ar": "شكراً لاتصالك بخدمة عملاء عين باي. ساعات العمل الرسمية من التاسعة والنصف صباحاً حتى الرابعة والنصف مساءً من الأحد إلى الخميس.",
       "audio": {
-        "en": true,
-        "ar": true
+        "en": false,
+        "ar": false
       }
     },
     "after_hours_customer_service_seasonal": {
-      "en": "Thank you for calling Einbay Customer Service. Our formal working hours are from 10:00 am to 6:00 pm, Sundays to Thursdays.",
+      "en": "Thank you for calling Einbay Customer Excellence. Our formal working hours are from 10:00 am to 6:00 pm, Sundays to Thursdays.",
       "ar": "شكراً لاتصالك بخدمة عملاء عين باي. ساعات العمل الرسمية من العاشرة صباحاً حتى السادسة مساءً من الأحد إلى الخميس.",
       "audio": {
-        "en": true,
-        "ar": true
+        "en": false,
+        "ar": false
       }
     },
     "ramadan": {
-      "en": "Thank you for calling Einbay Customer Service. Our Ramadan working hours are from 9:30 am to 2:30 pm, Sundays to Thursdays.",
+      "en": "Thank you for calling Einbay Customer Excellence. Our Ramadan working hours are from 9:30 am to 2:30 pm, Sundays to Thursdays.",
       "ar": "شكراً لاتصالك بخدمة عملاء عين باي. ساعات العمل خلال شهر رمضان المبارك من الساعة التاسعة والنصف صباحاً حتى الثانية والنصف مساءً من الأحد إلى الخميس.",
       "audio": {
-        "en": true,
-        "ar": true
+        "en": false,
+        "ar": false
       }
     },
     "maintenance": {
-      "en": "Thank you for calling Einbay Customer Service. There are maintenance works at the company that affect the electrical current. To leave us your request, please reach us at the email address: customersupport@einbay.com, or please call us within the next business day.",
+      "en": "Thank you for calling Einbay Customer Excellence. There are maintenance works at the company that affect the electrical current. To leave us your request, please reach us at the email address: customersupport@einbay.com, or please call us within the next business day.",
       "ar": "شكراً لاتصالك بخدمة عملاء عين باي. توجد حالياً أعمال صيانة بالشركة تؤثر على التيار الكهربائي. لترك طلبك، برجاء التواصل معنا عبر البريد الإلكتروني: customersupport@einbay.com، أو الاتصال بنا خلال يوم العمل التالي.",
       "audio": {
-        "en": true,
-        "ar": true
+        "en": false,
+        "ar": false
+      }
+    },
+    "after_hours_sales": {
+      "en": "Thank you for calling Einbay Sales. Our formal business hours are from 10:00 am to 6:00 pm, Sundays to Thursdays. Please call us again within the next business day.",
+      "ar": "شكراً لاتصالك بمبيعات عين باي. ساعات العمل الرسمية من العاشرة صباحاً حتى السادسة مساءً من الأحد إلى الخميس. برجاء الاتصال بنا مرة أخرى خلال يوم العمل التالي.",
+      "audio": {
+        "en": false,
+        "ar": false
+      }
+    },
+    "maintenance_sales": {
+      "en": "Thank you for calling Einbay Sales. There are maintenance works at the company that affect the electrical current. To leave us your request, please reach us at the email address: customersupport@einbay.com, or please call us within the next business day.",
+      "ar": "شكراً لاتصالك بمبيعات عين باي. توجد حالياً أعمال صيانة بالشركة تؤثر على التيار الكهربائي. لترك طلبك، برجاء التواصل معنا عبر البريد الإلكتروني: customersupport@einbay.com، أو الاتصال بنا خلال يوم العمل التالي.",
+      "audio": {
+        "en": false,
+        "ar": false
       }
     }
   },
@@ -475,11 +523,11 @@ window.ivrData = {
       }
     },
     "channel_customer_service": {
-      "en": "To speak to a Customer Service representative, please press 2.",
+      "en": "To speak to a Customer Excellence representative, please press 2.",
       "ar": "للتحدث إلى أحد ممثلي خدمة العملاء، برجاء الضغط على رقم 2.",
       "audio": {
-        "en": true,
-        "ar": true
+        "en": false,
+        "ar": false
       }
     },
     "hold_message": {
@@ -515,35 +563,51 @@ window.ivrData = {
       }
     },
     "after_hours_customer_service": {
-      "en": "Thank you for calling Cityview Customer Service. Our formal working hours are from 9:30 am to 4:30 pm, Sundays to Thursdays.",
+      "en": "Thank you for calling Cityview Customer Excellence. Our formal working hours are from 9:30 am to 4:30 pm, Sundays to Thursdays.",
       "ar": "شكراً لاتصالك بخدمة عملاء سيتي فيو. ساعات العمل الرسمية من التاسعة والنصف صباحاً حتى الرابعة والنصف مساءً من الأحد إلى الخميس.",
       "audio": {
-        "en": true,
-        "ar": true
+        "en": false,
+        "ar": false
       }
     },
     "after_hours_customer_service_seasonal": {
-      "en": "Thank you for calling Cityview Customer Service. Our formal working hours are from 10:00 am to 6:00 pm, Sundays to Thursdays.",
+      "en": "Thank you for calling Cityview Customer Excellence. Our formal working hours are from 10:00 am to 6:00 pm, Sundays to Thursdays.",
       "ar": "شكراً لاتصالك بخدمة عملاء سيتي فيو. ساعات العمل الرسمية من العاشرة صباحاً حتى السادسة مساءً من الأحد إلى الخميس.",
       "audio": {
-        "en": true,
-        "ar": true
+        "en": false,
+        "ar": false
       }
     },
     "ramadan": {
-      "en": "Thank you for calling Cityview Customer Service. Our Ramadan working hours are from 9:30 am to 2:30 pm, Sundays to Thursdays.",
+      "en": "Thank you for calling Cityview Customer Excellence. Our Ramadan working hours are from 9:30 am to 2:30 pm, Sundays to Thursdays.",
       "ar": "شكراً لاتصالك بخدمة عملاء سيتي فيو. ساعات العمل خلال شهر رمضان المبارك من الساعة التاسعة والنصف صباحاً حتى الثانية والنصف مساءً من الأحد إلى الخميس.",
       "audio": {
-        "en": true,
-        "ar": true
+        "en": false,
+        "ar": false
       }
     },
     "maintenance": {
-      "en": "Thank you for calling Cityview Customer Service. There are maintenance works at the company that affect the electrical current. To leave us your request, please reach us at the email address: customerexcellence@cityview.life, or please call us within the next business day.",
+      "en": "Thank you for calling Cityview Customer Excellence. There are maintenance works at the company that affect the electrical current. To leave us your request, please reach us at the email address: customerexcellence@cityview.life, or please call us within the next business day.",
       "ar": "شكراً لاتصالك بخدمة عملاء سيتي فيو. توجد حالياً أعمال صيانة بالشركة تؤثر على التيار الكهربائي. لترك طلبك، برجاء التواصل معنا عبر البريد الإلكتروني: customerexcellence@cityview.life، أو الاتصال بنا خلال يوم العمل التالي.",
       "audio": {
-        "en": true,
-        "ar": true
+        "en": false,
+        "ar": false
+      }
+    },
+    "after_hours_sales": {
+      "en": "Thank you for calling Cityview Sales. Our formal business hours are from 10:00 am to 6:00 pm, Sundays to Thursdays. Please call us again within the next business day.",
+      "ar": "شكراً لاتصالك بمبيعات سيتي فيو. ساعات العمل الرسمية من العاشرة صباحاً حتى السادسة مساءً من الأحد إلى الخميس. برجاء الاتصال بنا مرة أخرى خلال يوم العمل التالي.",
+      "audio": {
+        "en": false,
+        "ar": false
+      }
+    },
+    "maintenance_sales": {
+      "en": "Thank you for calling Cityview Sales. There are maintenance works at the company that affect the electrical current. To leave us your request, please reach us at the email address: customerexcellence@cityview.life, or please call us within the next business day.",
+      "ar": "شكراً لاتصالك بمبيعات سيتي فيو. توجد حالياً أعمال صيانة بالشركة تؤثر على التيار الكهربائي. لترك طلبك، برجاء التواصل معنا عبر البريد الإلكتروني: customerexcellence@cityview.life، أو الاتصال بنا خلال يوم العمل التالي.",
+      "audio": {
+        "en": false,
+        "ar": false
       }
     }
   },
@@ -565,11 +629,11 @@ window.ivrData = {
       }
     },
     "channel_customer_service": {
-      "en": "To speak to a Customer Service representative, please press 2.",
+      "en": "To speak to a Customer Excellence representative, please press 2.",
       "ar": "للتحدث إلى أحد ممثلي خدمة العملاء، برجاء الضغط على رقم 2.",
       "audio": {
-        "en": true,
-        "ar": true
+        "en": false,
+        "ar": false
       }
     },
     "hold_message": {
@@ -605,35 +669,51 @@ window.ivrData = {
       }
     },
     "after_hours_customer_service": {
-      "en": "Thank you for calling Artlife Customer Service. Our formal working hours are from 9:30 am to 4:30 pm, Sundays to Thursdays.",
+      "en": "Thank you for calling Artlife Customer Excellence. Our formal working hours are from 9:30 am to 4:30 pm, Sundays to Thursdays.",
       "ar": "شكراً لاتصالك بخدمة عملاء آرت لايف. ساعات العمل الرسمية من التاسعة والنصف صباحاً حتى الرابعة والنصف مساءً من الأحد إلى الخميس.",
       "audio": {
-        "en": true,
-        "ar": true
+        "en": false,
+        "ar": false
       }
     },
     "after_hours_customer_service_seasonal": {
-      "en": "Thank you for calling Artlife Customer Service. Our formal working hours are from 10:00 am to 6:00 pm, Sundays to Thursdays.",
+      "en": "Thank you for calling Artlife Customer Excellence. Our formal working hours are from 10:00 am to 6:00 pm, Sundays to Thursdays.",
       "ar": "شكراً لاتصالك بخدمة عملاء آرت لايف. ساعات العمل الرسمية من العاشرة صباحاً حتى السادسة مساءً من الأحد إلى الخميس.",
       "audio": {
-        "en": true,
-        "ar": true
+        "en": false,
+        "ar": false
       }
     },
     "ramadan": {
-      "en": "Thank you for calling Artlife Customer Service. Our Ramadan working hours are from 9:30 am to 2:30 pm, Sundays to Thursdays.",
+      "en": "Thank you for calling Artlife Customer Excellence. Our Ramadan working hours are from 9:30 am to 2:30 pm, Sundays to Thursdays.",
       "ar": "شكراً لاتصالك بخدمة عملاء آرت لايف. ساعات العمل خلال شهر رمضان المبارك من الساعة التاسعة والنصف صباحاً حتى الثانية والنصف مساءً من الأحد إلى الخميس.",
       "audio": {
-        "en": true,
-        "ar": true
+        "en": false,
+        "ar": false
       }
     },
     "maintenance": {
-      "en": "Thank you for calling Artlife Customer Service. There are maintenance works at the company that affect the electrical current. To leave us your request, please reach us at the email address: customerexcellence@artlifenewgiza.com, or please call us within the next business day.",
+      "en": "Thank you for calling Artlife Customer Excellence. There are maintenance works at the company that affect the electrical current. To leave us your request, please reach us at the email address: customerexcellence@artlifenewgiza.com, or please call us within the next business day.",
       "ar": "شكراً لاتصالك بخدمة عملاء آرت لايف. توجد حالياً أعمال صيانة بالشركة تؤثر على التيار الكهربائي. لترك طلبك، برجاء التواصل معنا عبر البريد الإلكتروني: customerexcellence@artlifenewgiza.com، أو الاتصال بنا خلال يوم العمل التالي.",
       "audio": {
-        "en": true,
-        "ar": true
+        "en": false,
+        "ar": false
+      }
+    },
+    "after_hours_sales": {
+      "en": "Thank you for calling Artlife Sales. Our formal business hours are from 10:00 am to 6:00 pm, Sundays to Thursdays. Please call us again within the next business day.",
+      "ar": "شكراً لاتصالك بمبيعات آرت لايف. ساعات العمل الرسمية من العاشرة صباحاً حتى السادسة مساءً من الأحد إلى الخميس. برجاء الاتصال بنا مرة أخرى خلال يوم العمل التالي.",
+      "audio": {
+        "en": false,
+        "ar": false
+      }
+    },
+    "maintenance_sales": {
+      "en": "Thank you for calling Artlife Sales. There are maintenance works at the company that affect the electrical current. To leave us your request, please reach us at the email address: customerexcellence@artlifenewgiza.com, or please call us within the next business day.",
+      "ar": "شكراً لاتصالك بمبيعات آرت لايف. توجد حالياً أعمال صيانة بالشركة تؤثر على التيار الكهربائي. لترك طلبك، برجاء التواصل معنا عبر البريد الإلكتروني: customerexcellence@artlifenewgiza.com، أو الاتصال بنا خلال يوم العمل التالي.",
+      "audio": {
+        "en": false,
+        "ar": false
       }
     }
   },
@@ -725,6 +805,22 @@ window.ivrData = {
         "en": true,
         "ar": true
       }
+    },
+    "after_hours_sales": {
+      "en": "Thank you for calling New Kairo Sales. Our formal business hours are from 10:00 am to 6:00 pm, Sundays to Thursdays. Please call us again within the next business day.",
+      "ar": "شكراً لاتصالك بمبيعات نيو كايرو. ساعات العمل الرسمية من العاشرة صباحاً حتى السادسة مساءً من الأحد إلى الخميس. برجاء الاتصال بنا مرة أخرى خلال يوم العمل التالي.",
+      "audio": {
+        "en": false,
+        "ar": false
+      }
+    },
+    "maintenance_sales": {
+      "en": "Thank you for calling New Kairo Sales. There are maintenance works at the company that affect the electrical current. To leave us your request, please reach us at the email address: customerexcellence@newkairo.com, or please call us within the next business day.",
+      "ar": "شكراً لاتصالك بمبيعات نيو كايرو. توجد حالياً أعمال صيانة بالشركة تؤثر على التيار الكهربائي. لترك طلبك، برجاء التواصل معنا عبر البريد الإلكتروني: customerexcellence@newkairo.com، أو الاتصال بنا خلال يوم العمل التالي.",
+      "audio": {
+        "en": false,
+        "ar": false
+      }
     }
   },
   "newgiza": {
@@ -753,11 +849,11 @@ window.ivrData = {
       }
     },
     "channel_customer_service": {
-      "en": "To speak to a Customer Service representative, please press 2.",
+      "en": "To speak to a Customer Excellence representative, please press 2.",
       "ar": "للتحدث إلى أحد ممثلي خدمة العملاء، برجاء الضغط على رقم 2.",
       "audio": {
-        "en": true,
-        "ar": true
+        "en": false,
+        "ar": false
       }
     },
     "channel_facility_management": {
@@ -793,43 +889,77 @@ window.ivrData = {
       }
     },
     "after_hours_sales": {
-      "en": "Thank you for calling New Giza Sales. Our formal working hours are from 9:30 am to 4:30 pm, Sundays to Thursdays. To leave us a voice message, please press 0 and one of our representatives will return your call within the next business day.",
-      "ar": "شكراً لاتصالك بمبيعات New Giza. ساعات العمل الرسمية من التاسعة والنصف صباحاً حتى الرابعة والنصف مساءً من الأحد إلى الخميس. لترك رسالة صوتية برجاء الضغط على 0 وسيقوم أحد ممثلينا بالتواصل معكم خلال يوم العمل التالي.",
+      "en": "Thank you for calling New Giza Sales. Our formal business hours are from 10:00 am to 6:00 pm, Sundays to Thursdays. Please call us again within the next business day.",
+      "ar": "شكراً لاتصالك بمبيعات New Giza. ساعات العمل الرسمية من العاشرة صباحاً حتى السادسة مساءً من الأحد إلى الخميس. برجاء الاتصال بنا مرة أخرى خلال يوم العمل التالي.",
       "audio": {
-        "en": true,
-        "ar": true
+        "en": false,
+        "ar": false
       }
     },
     "after_hours_customer_service": {
-      "en": "Thank you for calling New Giza Customer Service. Our formal working hours are from 9:30 am to 4:30 pm, Sundays to Thursdays.",
+      "en": "Thank you for calling New Giza Customer Excellence. Our formal working hours are from 9:30 am to 4:30 pm, Sundays to Thursdays.",
       "ar": "شكراً لاتصالك بخدمة عملاء New Giza. ساعات العمل الرسمية من التاسعة والنصف صباحاً حتى الرابعة والنصف مساءً من الأحد إلى الخميس.",
       "audio": {
-        "en": true,
-        "ar": true
+        "en": false,
+        "ar": false
       }
     },
     "ramadan_customer_service": {
-      "en": "Thank you for calling New Giza Customer Service. Our Ramadan working hours are from 9:30 am to 2:30 pm, Sundays to Thursdays.",
+      "en": "Thank you for calling New Giza Customer Excellence. Our Ramadan working hours are from 9:30 am to 2:30 pm, Sundays to Thursdays.",
       "ar": "شكراً لاتصالك بخدمة عملاء New Giza. ساعات العمل خلال شهر رمضان المبارك من الساعة التاسعة والنصف صباحاً حتى الثانية والنصف مساءً من الأحد إلى الخميس.",
       "audio": {
-        "en": true,
-        "ar": true
+        "en": false,
+        "ar": false
       }
     },
     "maintenance_customer_service": {
-      "en": "Thank you for calling New Giza Customer Service. There are maintenance works at the company that affect the electrical current. To leave us your request, please reach us at the email address: customerexcellence@newgiza.com, or please call us within the next business day.",
+      "en": "Thank you for calling New Giza Customer Excellence. There are maintenance works at the company that affect the electrical current. To leave us your request, please reach us at the email address: customerexcellence@newgiza.com, or please call us within the next business day.",
       "ar": "شكراً لاتصالك بخدمة عملاء New Giza. توجد حالياً أعمال صيانة بالشركة تؤثر على التيار الكهربائي. لترك طلبك، برجاء التواصل معنا عبر البريد الإلكتروني: customerexcellence@newgiza.com، أو الاتصال بنا خلال يوم العمل التالي.",
       "audio": {
-        "en": true,
-        "ar": true
+        "en": false,
+        "ar": false
       }
     },
     "after_hours_facility_management": {
-      "en": "Thank you for calling New Giza FM. Our formal working hours are from 9:00 am to 10:00 pm, Saturdays to Thursdays. To leave us a voice message, please press 0 and one of our representatives will return your call within the next business day. If this is an emergency, please hold; your call will be diverted to the operations room.",
-      "ar": "شكراً لاتصالك بإدارة التشغيل New Giza. ساعات العمل الرسمية من الساعة التاسعة صباحاً حتى العاشرة مساءً من السبت إلى الخميس. لترك رسالة صوتية برجاء الضغط على 0 وسيقوم أحد ممثلينا بالتواصل معكم خلال يوم العمل التالي. في حالة الطوارئ برجاء الانتظار، سيتم تحويل مكالمتكم لغرفة العمليات.",
+      "en": "Thank you for calling New Giza FM. Our formal working hours are from 9:00 am to 10:00 pm, Saturdays to Thursdays. Please call us again within the next business day. If this is an emergency, please hold; your call will be diverted to the operations room.",
+      "ar": "شكراً لاتصالك بإدارة التشغيل New Giza. ساعات العمل الرسمية من الساعة التاسعة صباحاً حتى العاشرة مساءً من السبت إلى الخميس. برجاء الاتصال بنا مرة أخرى خلال يوم العمل التالي. في حالة الطوارئ برجاء الانتظار، سيتم تحويل مكالمتكم لغرفة العمليات.",
       "audio": {
-        "en": true,
-        "ar": true
+        "en": false,
+        "ar": false
+      }
+    },
+    "maintenance_sales": {
+      "en": "Thank you for calling New Giza Sales. There are maintenance works at the company that affect the electrical current. To leave us your request, please reach us at the email address: customerexcellence@newgiza.com, or please call us within the next business day.",
+      "ar": "شكراً لاتصالك بمبيعات New Giza. توجد حالياً أعمال صيانة بالشركة تؤثر على التيار الكهربائي. لترك طلبك، برجاء التواصل معنا عبر البريد الإلكتروني: customerexcellence@newgiza.com، أو الاتصال بنا خلال يوم العمل التالي.",
+      "audio": {
+        "en": false,
+        "ar": false
+      }
+    }
+  },
+  "generic": {
+    "public_holiday": {
+      "en": "Thank you for calling. Today is an official public holiday. Please call us again during our formal working hours on the next business day.",
+      "ar": "شكراً لاتصالكم. اليوم عطلة رسمية. برجاء الاتصال بنا مرة أخرى خلال ساعات العمل الرسمية في يوم العمل التالي.",
+      "audio": {
+        "en": false,
+        "ar": false
+      }
+    },
+    "all_lines_busy_wait": {
+      "en": "All our lines are currently busy. Please hold and the next available representative will answer your call.",
+      "ar": "جميع الخطوط مشغولة حالياً. برجاء الانتظار وسيقوم أول ممثل متاح بالرد على مكالمتكم.",
+      "audio": {
+        "en": false,
+        "ar": false
+      }
+    },
+    "all_lines_busy_call_later": {
+      "en": "All our lines are currently busy. Please call us again later.",
+      "ar": "جميع الخطوط مشغولة حالياً. برجاء الاتصال بنا مرة أخرى في وقت لاحق.",
+      "audio": {
+        "en": false,
+        "ar": false
       }
     }
   }
