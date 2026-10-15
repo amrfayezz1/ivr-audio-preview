@@ -108,18 +108,18 @@ window.ivrData = {
     },
     "hold_message": {
       "en": "Please hold and one of our representatives will answer you shortly. For quality assurance purposes, this call may be recorded.",
-      "ar": "يرجى العلم أن المكالمة قد تكون مسجلة لضمان مستوى الخدمة. برجاء الانتظار وسيتم تحويل المكالمة إلى أحد ممثلي خدمة العملاء.",
+      "ar": "برجاء الانتظار وسيتم تحويل المكالمة إلى أحد ممثلي خدمة العملاء. لضمان مستوى الخدمة برجاء العلم بأن المكالمة قد تكون مسجلة.",
       "audio": {
         "en": true,
-        "ar": true
+        "ar": false
       }
     },
     "all_agents_busy": {
       "en": "All of our representatives are currently busy assisting other clients; your call is important to us so please hold and your call will be answered shortly.",
-      "ar": "جميع ممثلي خدمة العملاء مشغولون الآن بمساعدة عملاء آخرين، ومكالمتك تهمنا. برجاء الانتظار وسيقوم أحد ممثلينا بالرد في أسرع وقت.",
+      "ar": "جميع ممثلي خدمة العملاء مشغولون الآن بمساعدة عملاء آخرين، مكالمتك تهمنا. برجاء الانتظار وسيقوم أحد ممثلينا بالرد عليكم في أسرع وقت.",
       "audio": {
         "en": true,
-        "ar": true
+        "ar": false
       }
     },
     "error_no_selection": {
@@ -142,21 +142,13 @@ window.ivrData = {
       "en": "Thank you for calling IVY Sales. Our formal business hours are from 10:00 am to 6:00 pm, Sundays to Thursdays. Please call us again within the next business day.",
       "ar": "شكراً لاتصالك بمبيعات آيفي. ساعات العمل الرسمية من العاشرة صباحاً حتى السادسة مساءً من الأحد إلى الخميس. برجاء الاتصال بنا مرة أخرى خلال يوم العمل التالي.",
       "audio": {
-        "en": false,
+        "en": true,
         "ar": false
       }
     },
     "after_hours_customer_service": {
       "en": "Thank you for calling IVY Customer Excellence. Our formal working hours are from 9:30 am to 4:30 pm, Sundays to Thursdays.",
       "ar": "شكراً لاتصالك بخدمة عملاء آيفي. ساعات العمل الرسمية من التاسعة والنصف صباحاً حتى الرابعة والنصف مساءً من الأحد إلى الخميس.",
-      "audio": {
-        "en": true,
-        "ar": true
-      }
-    },
-    "after_hours_customer_service_seasonal": {
-      "en": "Thank you for calling IVY Customer Excellence. Our formal working hours are from 10:00 am to 6:00 pm, Sundays to Thursdays.",
-      "ar": "شكراً لاتصالك بخدمة عملاء آيفي. ساعات العمل الرسمية من العاشرة صباحاً حتى السادسة مساءً من الأحد إلى الخميس.",
       "audio": {
         "en": true,
         "ar": true
@@ -184,6 +176,14 @@ window.ivrData = {
       "audio": {
         "en": true,
         "ar": true
+      }
+    },
+    "after_hours_sales_ramadan": {
+      "en": "Thank you for calling IVY Sales. Our Ramadan working hours are from 9:30 am to 2:30 pm, Sundays to Thursdays. Please call us again within the next business day.",
+      "ar": "شكراً لاتصالك بمبيعات آيفي. ساعات العمل خلال شهر رمضان المبارك من الساعة التاسعة والنصف صباحاً حتى الثانية والنصف مساءً من الأحد إلى الخميس. برجاء الاتصال بنا مرة أخرى خلال يوم العمل التالي.",
+      "audio": {
+        "en": false,
+        "ar": false
       }
     }
   },
@@ -214,18 +214,18 @@ window.ivrData = {
     },
     "hold_message": {
       "en": "Please hold and one of our representatives will answer you shortly. For quality assurance purposes, this call may be recorded.",
-      "ar": "يرجى العلم أن المكالمة قد تكون مسجلة لضمان مستوى الخدمة. برجاء الانتظار وسيتم تحويل المكالمة إلى أحد ممثلي خدمة العملاء.",
+      "ar": "برجاء الانتظار وسيتم تحويل المكالمة إلى أحد ممثلي خدمة العملاء. لضمان مستوى الخدمة برجاء العلم بأن المكالمة قد تكون مسجلة.",
       "audio": {
         "en": true,
-        "ar": true
+        "ar": false
       }
     },
     "all_agents_busy": {
       "en": "All of our representatives are currently busy assisting other clients; your call is important to us so please hold and your call will be answered shortly.",
-      "ar": "جميع ممثلي خدمة العملاء مشغولون الآن بمساعدة عملاء آخرين، ومكالمتك تهمنا. برجاء الانتظار وسيقوم أحد ممثلينا بالرد في أسرع وقت.",
+      "ar": "جميع ممثلي خدمة العملاء مشغولون الآن بمساعدة عملاء آخرين، مكالمتك تهمنا. برجاء الانتظار وسيقوم أحد ممثلينا بالرد عليكم في أسرع وقت.",
       "audio": {
         "en": true,
-        "ar": true
+        "ar": false
       }
     },
     "error_no_selection": {
@@ -291,6 +291,14 @@ window.ivrData = {
         "en": true,
         "ar": true
       }
+    },
+    "after_hours_sales_ramadan": {
+      "en": "Thank you for calling Seashell Sales. Our Ramadan working hours are from 9:30 am to 2:30 pm, Sundays to Thursdays. Please call us again within the next business day.",
+      "ar": "شكراً لاتصالك بمبيعات سي شيل. ساعات العمل خلال شهر رمضان المبارك من الساعة التاسعة والنصف صباحاً حتى الثانية والنصف مساءً من الأحد إلى الخميس. برجاء الاتصال بنا مرة أخرى خلال يوم العمل التالي.",
+      "audio": {
+        "en": false,
+        "ar": false
+      }
     }
   },
   "playa": {
@@ -320,18 +328,18 @@ window.ivrData = {
     },
     "hold_message": {
       "en": "Please hold and one of our representatives will answer you shortly. For quality assurance purposes, this call may be recorded.",
-      "ar": "يرجى العلم أن المكالمة قد تكون مسجلة لضمان مستوى الخدمة. برجاء الانتظار وسيتم تحويل المكالمة إلى أحد ممثلي خدمة العملاء.",
+      "ar": "برجاء الانتظار وسيتم تحويل المكالمة إلى أحد ممثلي خدمة العملاء. لضمان مستوى الخدمة برجاء العلم بأن المكالمة قد تكون مسجلة.",
       "audio": {
         "en": true,
-        "ar": true
+        "ar": false
       }
     },
     "all_agents_busy": {
       "en": "All of our representatives are currently busy assisting other clients; your call is important to us so please hold and your call will be answered shortly.",
-      "ar": "جميع ممثلي خدمة العملاء مشغولون الآن بمساعدة عملاء آخرين، ومكالمتك تهمنا. برجاء الانتظار وسيقوم أحد ممثلينا بالرد في أسرع وقت.",
+      "ar": "جميع ممثلي خدمة العملاء مشغولون الآن بمساعدة عملاء آخرين، مكالمتك تهمنا. برجاء الانتظار وسيقوم أحد ممثلينا بالرد عليكم في أسرع وقت.",
       "audio": {
         "en": true,
-        "ar": true
+        "ar": false
       }
     },
     "error_no_selection": {
@@ -397,6 +405,14 @@ window.ivrData = {
         "en": false,
         "ar": false
       }
+    },
+    "after_hours_sales_ramadan": {
+      "en": "Thank you for calling Playa Sales. Our Ramadan working hours are from 9:30 am to 2:30 pm, Sundays to Thursdays. Please call us again within the next business day.",
+      "ar": "شكراً لاتصالك بمبيعات بلايا. ساعات العمل خلال شهر رمضان المبارك من الساعة التاسعة والنصف صباحاً حتى الثانية والنصف مساءً من الأحد إلى الخميس. برجاء الاتصال بنا مرة أخرى خلال يوم العمل التالي.",
+      "audio": {
+        "en": false,
+        "ar": false
+      }
     }
   },
   "einbay": {
@@ -426,18 +442,18 @@ window.ivrData = {
     },
     "hold_message": {
       "en": "Please hold and one of our representatives will answer you shortly. For quality assurance purposes, this call may be recorded.",
-      "ar": "يرجى العلم أن المكالمة قد تكون مسجلة لضمان مستوى الخدمة. برجاء الانتظار وسيتم تحويل المكالمة إلى أحد ممثلي خدمة العملاء.",
+      "ar": "برجاء الانتظار وسيتم تحويل المكالمة إلى أحد ممثلي خدمة العملاء. لضمان مستوى الخدمة برجاء العلم بأن المكالمة قد تكون مسجلة.",
       "audio": {
         "en": true,
-        "ar": true
+        "ar": false
       }
     },
     "all_agents_busy": {
       "en": "All of our representatives are currently busy assisting other clients; your call is important to us so please hold and your call will be answered shortly.",
-      "ar": "جميع ممثلي خدمة العملاء مشغولون الآن بمساعدة عملاء آخرين، ومكالمتك تهمنا. برجاء الانتظار وسيقوم أحد ممثلينا بالرد في أسرع وقت.",
+      "ar": "جميع ممثلي خدمة العملاء مشغولون الآن بمساعدة عملاء آخرين، مكالمتك تهمنا. برجاء الانتظار وسيقوم أحد ممثلينا بالرد عليكم في أسرع وقت.",
       "audio": {
         "en": true,
-        "ar": true
+        "ar": false
       }
     },
     "error_no_selection": {
@@ -459,14 +475,6 @@ window.ivrData = {
     "after_hours_customer_service": {
       "en": "Thank you for calling Einbay Customer Excellence. Our formal working hours are from 9:30 am to 4:30 pm, Sundays to Thursdays.",
       "ar": "شكراً لاتصالك بخدمة عملاء عين باي. ساعات العمل الرسمية من التاسعة والنصف صباحاً حتى الرابعة والنصف مساءً من الأحد إلى الخميس.",
-      "audio": {
-        "en": false,
-        "ar": false
-      }
-    },
-    "after_hours_customer_service_seasonal": {
-      "en": "Thank you for calling Einbay Customer Excellence. Our formal working hours are from 10:00 am to 6:00 pm, Sundays to Thursdays.",
-      "ar": "شكراً لاتصالك بخدمة عملاء عين باي. ساعات العمل الرسمية من العاشرة صباحاً حتى السادسة مساءً من الأحد إلى الخميس.",
       "audio": {
         "en": false,
         "ar": false
@@ -503,6 +511,14 @@ window.ivrData = {
         "en": false,
         "ar": false
       }
+    },
+    "after_hours_sales_ramadan": {
+      "en": "Thank you for calling Einbay Sales. Our Ramadan working hours are from 9:30 am to 2:30 pm, Sundays to Thursdays. Please call us again within the next business day.",
+      "ar": "شكراً لاتصالك بمبيعات عين باي. ساعات العمل خلال شهر رمضان المبارك من الساعة التاسعة والنصف صباحاً حتى الثانية والنصف مساءً من الأحد إلى الخميس. برجاء الاتصال بنا مرة أخرى خلال يوم العمل التالي.",
+      "audio": {
+        "en": false,
+        "ar": false
+      }
     }
   },
   "cityview": {
@@ -532,18 +548,18 @@ window.ivrData = {
     },
     "hold_message": {
       "en": "Please hold and one of our representatives will answer you shortly. For quality assurance purposes, this call may be recorded.",
-      "ar": "يرجى العلم أن المكالمة قد تكون مسجلة لضمان مستوى الخدمة. برجاء الانتظار وسيتم تحويل المكالمة إلى أحد ممثلي خدمة العملاء.",
+      "ar": "برجاء الانتظار وسيتم تحويل المكالمة إلى أحد ممثلي خدمة العملاء. لضمان مستوى الخدمة برجاء العلم بأن المكالمة قد تكون مسجلة.",
       "audio": {
         "en": true,
-        "ar": true
+        "ar": false
       }
     },
     "all_agents_busy": {
       "en": "All of our representatives are currently busy assisting other clients; your call is important to us so please hold and your call will be answered shortly.",
-      "ar": "جميع ممثلي خدمة العملاء مشغولون الآن بمساعدة عملاء آخرين، ومكالمتك تهمنا. برجاء الانتظار وسيقوم أحد ممثلينا بالرد في أسرع وقت.",
+      "ar": "جميع ممثلي خدمة العملاء مشغولون الآن بمساعدة عملاء آخرين، مكالمتك تهمنا. برجاء الانتظار وسيقوم أحد ممثلينا بالرد عليكم في أسرع وقت.",
       "audio": {
         "en": true,
-        "ar": true
+        "ar": false
       }
     },
     "error_no_selection": {
@@ -565,14 +581,6 @@ window.ivrData = {
     "after_hours_customer_service": {
       "en": "Thank you for calling Cityview Customer Excellence. Our formal working hours are from 9:30 am to 4:30 pm, Sundays to Thursdays.",
       "ar": "شكراً لاتصالك بخدمة عملاء سيتي فيو. ساعات العمل الرسمية من التاسعة والنصف صباحاً حتى الرابعة والنصف مساءً من الأحد إلى الخميس.",
-      "audio": {
-        "en": false,
-        "ar": false
-      }
-    },
-    "after_hours_customer_service_seasonal": {
-      "en": "Thank you for calling Cityview Customer Excellence. Our formal working hours are from 10:00 am to 6:00 pm, Sundays to Thursdays.",
-      "ar": "شكراً لاتصالك بخدمة عملاء سيتي فيو. ساعات العمل الرسمية من العاشرة صباحاً حتى السادسة مساءً من الأحد إلى الخميس.",
       "audio": {
         "en": false,
         "ar": false
@@ -609,6 +617,14 @@ window.ivrData = {
         "en": false,
         "ar": false
       }
+    },
+    "after_hours_sales_ramadan": {
+      "en": "Thank you for calling Cityview Sales. Our Ramadan working hours are from 9:30 am to 2:30 pm, Sundays to Thursdays. Please call us again within the next business day.",
+      "ar": "شكراً لاتصالك بمبيعات سيتي فيو. ساعات العمل خلال شهر رمضان المبارك من الساعة التاسعة والنصف صباحاً حتى الثانية والنصف مساءً من الأحد إلى الخميس. برجاء الاتصال بنا مرة أخرى خلال يوم العمل التالي.",
+      "audio": {
+        "en": false,
+        "ar": false
+      }
     }
   },
   "artlife": {
@@ -638,18 +654,18 @@ window.ivrData = {
     },
     "hold_message": {
       "en": "Please hold and one of our representatives will answer you shortly. For quality assurance purposes, this call may be recorded.",
-      "ar": "يرجى العلم أن المكالمة قد تكون مسجلة لضمان مستوى الخدمة. برجاء الانتظار وسيتم تحويل المكالمة إلى أحد ممثلي خدمة العملاء.",
+      "ar": "برجاء الانتظار وسيتم تحويل المكالمة إلى أحد ممثلي خدمة العملاء. لضمان مستوى الخدمة برجاء العلم بأن المكالمة قد تكون مسجلة.",
       "audio": {
         "en": true,
-        "ar": true
+        "ar": false
       }
     },
     "all_agents_busy": {
       "en": "All of our representatives are currently busy assisting other clients; your call is important to us so please hold and your call will be answered shortly.",
-      "ar": "جميع ممثلي خدمة العملاء مشغولون الآن بمساعدة عملاء آخرين، ومكالمتك تهمنا. برجاء الانتظار وسيقوم أحد ممثلينا بالرد في أسرع وقت.",
+      "ar": "جميع ممثلي خدمة العملاء مشغولون الآن بمساعدة عملاء آخرين، مكالمتك تهمنا. برجاء الانتظار وسيقوم أحد ممثلينا بالرد عليكم في أسرع وقت.",
       "audio": {
         "en": true,
-        "ar": true
+        "ar": false
       }
     },
     "error_no_selection": {
@@ -671,14 +687,6 @@ window.ivrData = {
     "after_hours_customer_service": {
       "en": "Thank you for calling Artlife Customer Excellence. Our formal working hours are from 9:30 am to 4:30 pm, Sundays to Thursdays.",
       "ar": "شكراً لاتصالك بخدمة عملاء آرت لايف. ساعات العمل الرسمية من التاسعة والنصف صباحاً حتى الرابعة والنصف مساءً من الأحد إلى الخميس.",
-      "audio": {
-        "en": false,
-        "ar": false
-      }
-    },
-    "after_hours_customer_service_seasonal": {
-      "en": "Thank you for calling Artlife Customer Excellence. Our formal working hours are from 10:00 am to 6:00 pm, Sundays to Thursdays.",
-      "ar": "شكراً لاتصالك بخدمة عملاء آرت لايف. ساعات العمل الرسمية من العاشرة صباحاً حتى السادسة مساءً من الأحد إلى الخميس.",
       "audio": {
         "en": false,
         "ar": false
@@ -715,6 +723,14 @@ window.ivrData = {
         "en": false,
         "ar": false
       }
+    },
+    "after_hours_sales_ramadan": {
+      "en": "Thank you for calling Artlife Sales. Our Ramadan working hours are from 9:30 am to 2:30 pm, Sundays to Thursdays. Please call us again within the next business day.",
+      "ar": "شكراً لاتصالك بمبيعات آرت لايف. ساعات العمل خلال شهر رمضان المبارك من الساعة التاسعة والنصف صباحاً حتى الثانية والنصف مساءً من الأحد إلى الخميس. برجاء الاتصال بنا مرة أخرى خلال يوم العمل التالي.",
+      "audio": {
+        "en": false,
+        "ar": false
+      }
     }
   },
   "newkairo": {
@@ -744,18 +760,18 @@ window.ivrData = {
     },
     "hold_message": {
       "en": "Please hold and one of our representatives will answer you shortly. For quality assurance purposes, this call may be recorded.",
-      "ar": "يرجى العلم أن المكالمة قد تكون مسجلة لضمان مستوى الخدمة. برجاء الانتظار وسيتم تحويل المكالمة إلى أحد ممثلي خدمة العملاء.",
+      "ar": "برجاء الانتظار وسيتم تحويل المكالمة إلى أحد ممثلي خدمة العملاء. لضمان مستوى الخدمة برجاء العلم بأن المكالمة قد تكون مسجلة.",
       "audio": {
         "en": true,
-        "ar": true
+        "ar": false
       }
     },
     "all_agents_busy": {
       "en": "All of our representatives are currently busy assisting other clients; your call is important to us so please hold and your call will be answered shortly.",
-      "ar": "جميع ممثلي خدمة العملاء مشغولون الآن بمساعدة عملاء آخرين، ومكالمتك تهمنا. برجاء الانتظار وسيقوم أحد ممثلينا بالرد في أسرع وقت.",
+      "ar": "جميع ممثلي خدمة العملاء مشغولون الآن بمساعدة عملاء آخرين، مكالمتك تهمنا. برجاء الانتظار وسيقوم أحد ممثلينا بالرد عليكم في أسرع وقت.",
       "audio": {
         "en": true,
-        "ar": true
+        "ar": false
       }
     },
     "error_no_selection": {
@@ -777,14 +793,6 @@ window.ivrData = {
     "after_hours_customer_service": {
       "en": "Thank you for calling New Kairo Customer Excellence. Our formal working hours are from 9:30 am to 4:30 pm, Sundays to Thursdays.",
       "ar": "شكراً لاتصالك بخدمة عملاء نيو كايرو. ساعات العمل الرسمية من التاسعة والنصف صباحاً حتى الرابعة والنصف مساءً من الأحد إلى الخميس.",
-      "audio": {
-        "en": true,
-        "ar": true
-      }
-    },
-    "after_hours_customer_service_seasonal": {
-      "en": "Thank you for calling New Kairo Customer Excellence. Our formal working hours are from 10:00 am to 6:00 pm, Sundays to Thursdays.",
-      "ar": "شكراً لاتصالك بخدمة عملاء نيو كايرو. ساعات العمل الرسمية من العاشرة صباحاً حتى السادسة مساءً من الأحد إلى الخميس.",
       "audio": {
         "en": true,
         "ar": true
@@ -817,6 +825,14 @@ window.ivrData = {
     "maintenance_sales": {
       "en": "Thank you for calling New Kairo Sales. There are maintenance works at the company that affect the electrical current. To leave us your request, please reach us at the email address: customerexcellence@newkairo.com, or please call us within the next business day.",
       "ar": "شكراً لاتصالك بمبيعات نيو كايرو. توجد حالياً أعمال صيانة بالشركة تؤثر على التيار الكهربائي. لترك طلبك، برجاء التواصل معنا عبر البريد الإلكتروني: customerexcellence@newkairo.com، أو الاتصال بنا خلال يوم العمل التالي.",
+      "audio": {
+        "en": false,
+        "ar": false
+      }
+    },
+    "after_hours_sales_ramadan": {
+      "en": "Thank you for calling New Kairo Sales. Our Ramadan working hours are from 9:30 am to 2:30 pm, Sundays to Thursdays. Please call us again within the next business day.",
+      "ar": "شكراً لاتصالك بمبيعات نيو كايرو. ساعات العمل خلال شهر رمضان المبارك من الساعة التاسعة والنصف صباحاً حتى الثانية والنصف مساءً من الأحد إلى الخميس. برجاء الاتصال بنا مرة أخرى خلال يوم العمل التالي.",
       "audio": {
         "en": false,
         "ar": false
@@ -866,18 +882,18 @@ window.ivrData = {
     },
     "hold_message": {
       "en": "Please hold and one of our representatives will answer you shortly. For quality assurance purposes, this call may be recorded.",
-      "ar": "يرجى العلم أن المكالمة قد تكون مسجلة لضمان مستوى الخدمة. برجاء الانتظار وسيتم تحويل المكالمة إلى أحد ممثلي خدمة العملاء.",
+      "ar": "برجاء الانتظار وسيتم تحويل المكالمة إلى أحد ممثلي خدمة العملاء. لضمان مستوى الخدمة برجاء العلم بأن المكالمة قد تكون مسجلة.",
       "audio": {
         "en": true,
-        "ar": true
+        "ar": false
       }
     },
     "all_agents_busy": {
       "en": "All of our representatives are currently busy assisting other clients; your call is important to us so please hold and your call will be answered shortly.",
-      "ar": "جميع ممثلي خدمة العملاء مشغولون الآن بمساعدة عملاء آخرين، ومكالمتك تهمنا. برجاء الانتظار وسيقوم أحد ممثلينا بالرد في أسرع وقت.",
+      "ar": "جميع ممثلي خدمة العملاء مشغولون الآن بمساعدة عملاء آخرين، مكالمتك تهمنا. برجاء الانتظار وسيقوم أحد ممثلينا بالرد عليكم في أسرع وقت.",
       "audio": {
         "en": true,
-        "ar": true
+        "ar": false
       }
     },
     "error_no_selection": {
@@ -935,6 +951,22 @@ window.ivrData = {
         "en": false,
         "ar": false
       }
+    },
+    "after_hours_sales_ramadan": {
+      "en": "Thank you for calling New Giza Sales. Our Ramadan working hours are from 9:30 am to 2:30 pm, Sundays to Thursdays. Please call us again within the next business day.",
+      "ar": "شكراً لاتصالك بمبيعات New Giza. ساعات العمل خلال شهر رمضان المبارك من الساعة التاسعة والنصف صباحاً حتى الثانية والنصف مساءً من الأحد إلى الخميس. برجاء الاتصال بنا مرة أخرى خلال يوم العمل التالي.",
+      "audio": {
+        "en": false,
+        "ar": false
+      }
+    },
+    "after_hours_facility_management_ramadan": {
+      "en": "[TBC - FM Ramadan hours not confirmed] Thank you for calling New Giza FM. Our Ramadan working hours are from [TBC] to [TBC], Saturdays to Thursdays. Please call us again within the next business day. If this is an emergency, please hold; your call will be diverted to the operations room.",
+      "ar": "[TBC - FM Ramadan hours not confirmed] شكراً لاتصالك بإدارة التشغيل New Giza. ساعات العمل خلال شهر رمضان المبارك من [TBC] حتى [TBC] من السبت إلى الخميس. برجاء الاتصال بنا مرة أخرى خلال يوم العمل التالي. في حالة الطوارئ برجاء الانتظار، سيتم تحويل مكالمتكم لغرفة العمليات.",
+      "audio": {
+        "en": false,
+        "ar": false
+      }
     }
   },
   "generic": {
@@ -947,8 +979,8 @@ window.ivrData = {
       }
     },
     "all_lines_busy_wait": {
-      "en": "All our lines are currently busy. Please hold and the next available representative will answer your call.",
-      "ar": "جميع الخطوط مشغولة حالياً. برجاء الانتظار وسيقوم أول ممثل متاح بالرد على مكالمتكم.",
+      "en": "All our lines are currently busy. Please hold.",
+      "ar": "جميع الخطوط مشغولة في الوقت الحالي. برجاء الانتظار.",
       "audio": {
         "en": false,
         "ar": false
