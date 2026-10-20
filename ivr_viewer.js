@@ -10,6 +10,10 @@ function audioPath(project, key, language) {
 
 let currentProject = null;
 
+// Every script across every project, flattened once so search can scan them all
+// regardless of which project is open in the sidebar.
+const searchIndex = [];
+
 function formatKey(key) {
     return key
         .replace(/_/g, ' ')
@@ -18,26 +22,125 @@ function formatKey(key) {
         .join(' ');
 }
 
+// Some Arabic lines are diacritized (e.g. Einbay's عِيِن باي) and spelling varies
+// between alef/ya/ta-marbuta forms and Arabic-Indic vs Western digits, so both the
+// text and the query are folded to one form before comparing — otherwise typing
+// "عين" or "4" would miss lines that read "عِيِن" or "٤". Underscores are kept, so a
+// typed file name like "channel_sales_en" matches as one exact term.
+function normalize(text) {
+    return (text || '')
+        .toLowerCase()
+        .replace(/[\u064B-\u065F\u0670\u0640]/g, '')
+        .replace(/[أإآٱ]/g, 'ا')
+        .replace(/ى/g, 'ي')
+        .replace(/ة/g, 'ه')
+        .replace(/[٠-٩]/g, d => String(d.charCodeAt(0) - 0x0660));
+}
+
+// The names a clip goes by: on disk ({key}_{lang}.wav, the same in deploy/,
+// telephony/ and the vendor packages), with its folder, and as downloaded.
+function fileNames(project, key) {
+    return ['en', 'ar'].flatMap(lang => [
+        audioPath(project, key, lang),
+        downloadName(project, key, lang),
+    ]);
+}
+
+function buildSearchIndex() {
+    Object.entries(ivrScripts).forEach(([project, scripts]) => {
+        Object.entries(scripts).forEach(([key, content]) => {
+            searchIndex.push({
+                project,
+                key,
+                content,
+                haystack: normalize([
+                    formatKey(project), formatKey(key), content.en, content.ar, ...fileNames(project, key),
+                ].join(' ')),
+            });
+        });
+    });
+}
+
 function initSidebar() {
     const list = document.getElementById('projectList');
     list.innerHTML = '';
     Object.keys(ivrScripts).forEach(project => {
         const item = document.createElement('div');
         item.className = 'project-item';
+        item.dataset.project = project;
         item.textContent = formatKey(project);
-        item.addEventListener('click', () => selectProject(project, item));
+        item.addEventListener('click', () => selectProject(project));
         list.appendChild(item);
     });
 }
 
-function selectProject(project, itemEl) {
+// Picking a project always leaves search mode, so the sidebar stays a reliable
+// way back to a single project's scripts.
+function selectProject(project) {
     currentProject = project;
-    document.querySelectorAll('.project-item').forEach(i => i.classList.remove('active'));
-    itemEl.classList.add('active');
-    document.getElementById('projectTitle').textContent = formatKey(project);
+    document.getElementById('searchInput').value = '';
+    showProject(project);
+}
+
+// Pass null to clear the highlight, so search results don't look scoped to
+// whichever project happened to be open.
+function markActive(project) {
+    document.querySelectorAll('.project-item').forEach(i => {
+        i.classList.toggle('active', i.dataset.project === project);
+    });
+}
+
+function showProject(project) {
     const scripts = ivrScripts[project];
-    document.getElementById('scriptCount').textContent = Object.keys(scripts).length;
-    renderScripts(project);
+    markActive(project);
+    document.getElementById('projectTitle').textContent = formatKey(project);
+    setCount(`${Object.keys(scripts).length} scripts`);
+
+    const entries = Object.entries(scripts).map(([key, content]) => ({ project, key, content }));
+    if (entries.length === 0) {
+        showEmpty('🎵', 'No scripts available for this project yet');
+        return;
+    }
+    renderCards(entries, false);
+}
+
+// All whitespace-separated terms must appear somewhere in the script — its
+// project, its name, or either language — so "ivy hours" narrows to Ivy's
+// after-hours lines rather than everything mentioning either word.
+function runSearch(query) {
+    const terms = normalize(query).split(/\s+/).filter(Boolean);
+    if (terms.length === 0) {
+        showProject(currentProject);
+        return;
+    }
+
+    markActive(null);
+    const matches = searchIndex.filter(e => terms.every(t => e.haystack.includes(t)));
+    const projectCount = new Set(matches.map(m => m.project)).size;
+
+    document.getElementById('projectTitle').textContent = 'Search results';
+    setCount(matches.length === 0
+        ? 'No matches'
+        : `${matches.length} ${matches.length === 1 ? 'script' : 'scripts'} in ${projectCount} ${projectCount === 1 ? 'project' : 'projects'}`);
+
+    if (matches.length === 0) {
+        showEmpty('🔍', 'No scripts match your search in any project');
+        return;
+    }
+    renderCards(matches, true);
+}
+
+function setCount(text) {
+    document.getElementById('scriptCount').textContent = text;
+}
+
+function showEmpty(icon, text) {
+    document.getElementById('scriptsGrid').innerHTML =
+        `<div class="empty-state"><div class="empty-icon">${icon}</div><div class="empty-text">${text}</div></div>`;
+}
+
+function cardId(project, key) {
+    return `script-${project}-${key}`;
 }
 
 // A real <a download> rather than a JS handler: the browser saves the file
@@ -49,48 +152,49 @@ function downloadBtn(project, key, language, exists) {
         return `<span class="download-btn disabled" title="No ${label} audio available">⇓</span>`;
     }
     const href = audioPath(project, key, language);
-    const name = `${project}_${key}_${language}.wav`;
-    return `<a class="download-btn" href="${href}" download="${name}" title="Download ${label} audio">⇓</a>`;
+    return `<a class="download-btn" href="${href}" download="${downloadName(project, key, language)}" title="Download ${label} audio">⇓</a>`;
 }
 
-function renderScripts(project) {
+function downloadName(project, key, language) {
+    return `${project}_${key}_${language}.wav`;
+}
+
+// `showProject` adds a project tag to each card — needed in search results,
+// where the same script name (e.g. "Channel Sales") appears for many projects.
+function renderCards(entries, showProject) {
     const grid = document.getElementById('scriptsGrid');
-    const scripts = ivrScripts[project];
-
-    if (Object.keys(scripts).length === 0) {
-        grid.innerHTML = '<div class="empty-state"><div class="empty-icon">🎵</div><div class="empty-text">No scripts available for this project yet</div></div>';
-        return;
-    }
-
     grid.innerHTML = '';
-    Object.entries(scripts).forEach(([key, content]) => {
+    entries.forEach(({ project, key, content }) => {
         const card = document.createElement('div');
         card.className = 'script-card';
-        card.id = `script-${key}`;
+        card.id = cardId(project, key);
 
         const audio = content.audio || { en: false, ar: false };
         const enBtnCls = audio.en ? 'play-btn' : 'play-btn disabled';
         const arBtnCls = audio.ar ? 'play-btn' : 'play-btn disabled';
         const enLabel = audio.en ? '▶ English' : '✗ English';
         const arLabel = audio.ar ? '▶ العربية' : '✗ العربية';
+        const projectTag = showProject
+            ? `<span class="project-tag" data-project="${project}" title="Open ${formatKey(project)}">${formatKey(project)}</span>`
+            : '';
 
         card.innerHTML = `
-            <div class="script-key"><span>${formatKey(key)}</span></div>
+            <div class="script-key"><span>${formatKey(key)}</span>${projectTag}</div>
             <div class="script-text">
-                <div class="script-label">🇬🇧 English</div>
+                <div class="script-label">🇬🇧 English<span class="file-name">${key}_en.wav</span></div>
                 <div class="script-content">${content.en || 'N/A'}</div>
             </div>
             <div class="script-text">
-                <div class="script-label">🇸🇦 العربية</div>
+                <div class="script-label">🇸🇦 العربية<span class="file-name">${key}_ar.wav</span></div>
                 <div class="script-content arabic">${content.ar || 'N/A'}</div>
             </div>
             <div class="script-buttons">
                 <div class="btn-pair">
-                    <button class="${enBtnCls}" data-language="en" data-key="${key}" ${audio.en ? '' : 'disabled'}>${enLabel}</button>
+                    <button class="${enBtnCls}" data-language="en" ${audio.en ? '' : 'disabled'}>${enLabel}</button>
                     ${downloadBtn(project, key, 'en', audio.en)}
                 </div>
                 <div class="btn-pair">
-                    <button class="${arBtnCls}" data-language="ar" data-key="${key}" ${audio.ar ? '' : 'disabled'}>${arLabel}</button>
+                    <button class="${arBtnCls}" data-language="ar" ${audio.ar ? '' : 'disabled'}>${arLabel}</button>
                     ${downloadBtn(project, key, 'ar', audio.ar)}
                 </div>
             </div>
@@ -100,16 +204,24 @@ function renderScripts(project) {
         card.querySelectorAll('.play-btn:not(.disabled)').forEach(btn => {
             btn.addEventListener('click', e => {
                 e.stopPropagation();
-                playAudio(key, btn.dataset.language);
+                playAudio(project, key, btn.dataset.language);
             });
         });
+
+        const tag = card.querySelector('.project-tag');
+        if (tag) {
+            tag.addEventListener('click', e => {
+                e.stopPropagation();
+                selectProject(project);
+            });
+        }
     });
 }
 
-function playAudio(key, language) {
-    const path = audioPath(currentProject, key, language);
+function playAudio(project, key, language) {
+    const path = audioPath(project, key, language);
     const audioEl = document.getElementById('audioElement');
-    document.getElementById('playerTitle').textContent = formatKey(key);
+    document.getElementById('playerTitle').textContent = `${formatKey(key)} · ${formatKey(project)}`;
     document.getElementById('playerSubtitle').textContent = LANG_LABEL[language];
 
     audioEl.src = path;
@@ -120,19 +232,42 @@ function playAudio(key, language) {
     });
 
     document.querySelectorAll('.script-card').forEach(c => c.classList.remove('playing'));
-    document.getElementById(`script-${key}`).classList.add('playing');
+    const card = document.getElementById(cardId(project, key));
+    if (card) card.classList.add('playing');
+}
+
+function initSearch() {
+    const input = document.getElementById('searchInput');
+    input.addEventListener('input', () => runSearch(input.value));
+    input.addEventListener('keydown', e => {
+        if (e.key === 'Escape') {
+            input.value = '';
+            runSearch('');
+            input.blur();
+        }
+    });
+
+    // "/" jumps to search from anywhere, unless the user is already typing.
+    document.addEventListener('keydown', e => {
+        const typing = ['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName);
+        if (e.key === '/' && !typing) {
+            e.preventDefault();
+            input.focus();
+            input.select();
+        }
+    });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
     if (!window.ivrData) {
-        document.getElementById('scriptsGrid').innerHTML =
-            '<div class="empty-state"><div class="empty-icon">⚠️</div>' +
-            '<div class="empty-text">ivr_data.js not loaded.<br>Run <code>python build_ivr_data.py</code> to generate it.</div></div>';
+        showEmpty('⚠️', 'ivr_data.js not loaded.<br>Run <code>python build_ivr_data.py</code> to generate it.');
         return;
     }
+    buildSearchIndex();
     initSidebar();
-    const first = document.querySelector('.project-item');
-    if (first) first.click();
+    initSearch();
+    const first = Object.keys(ivrScripts)[0];
+    if (first) selectProject(first);
 });
 
 document.getElementById('audioElement').addEventListener('ended', () => {
