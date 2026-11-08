@@ -34,7 +34,7 @@ window.ivrData = {
     },
     "project_selection_playa": {
       "en": "For Playa, please press 3",
-      "ar": "للاستفسار عن بلايا، برجاء الضغط على رقم 3",
+      "ar": "للاستفسار عن Playa، برجاء الضغط على رقم 3",
       "audio": {
         "en": true,
         "ar": true
@@ -344,7 +344,7 @@ window.ivrData = {
     },
     "after_hours_customer_service": {
       "en": "Thank you for calling Playa Customer Excellence. Our formal working hours are from 9:30 am to 4:30 pm, Sundays to Thursdays. If this is an emergency, please hold; your call will be diverted to the operations room.",
-      "ar": "شكراً لاتصالك بإدارة خدمة عملاء بلايا. مواعيد العمل الرسمية من التاسعة والنصف صباحاً حتى الرابعة والنصف مساءً من الأحد إلى الخميس. في حالة الطوارئ برجاء الانتظار، سيتم تحويل مكالمتكم لغرفة العمليات.",
+      "ar": "شكراً لاتصالك بإدارة خدمة عملاء Playa. مواعيد العمل الرسمية من التاسعة والنصف صباحاً حتى الرابعة والنصف مساءً من الأحد إلى الخميس. في حالة الطوارئ برجاء الانتظار، سيتم تحويل مكالمتكم لغرفة العمليات.",
       "audio": {
         "en": true,
         "ar": true
@@ -352,7 +352,7 @@ window.ivrData = {
     },
     "after_hours_customer_service_seasonal": {
       "en": "Thank you for calling Playa Customer Excellence. Our formal working hours are from 10:00 am to 6:00 pm, all week days. If this is an emergency, please hold; your call will be diverted to the operations room.",
-      "ar": "شكراً لاتصالك بإدارة خدمة عملاء بلايا. مواعيد العمل الرسمية من العاشرة صباحاً حتى السادسة مساءً طوال أيام الأسبوع. في حالة الطوارئ برجاء الانتظار، سيتم تحويل مكالمتكم لغرفة العمليات.",
+      "ar": "شكراً لاتصالك بإدارة خدمة عملاء Playa. مواعيد العمل الرسمية من العاشرة صباحاً حتى السادسة مساءً طوال أيام الأسبوع. في حالة الطوارئ برجاء الانتظار، سيتم تحويل مكالمتكم لغرفة العمليات.",
       "audio": {
         "en": true,
         "ar": true
@@ -360,7 +360,7 @@ window.ivrData = {
     },
     "ramadan": {
       "en": "Thank you for calling Playa Customer Excellence. Our Ramadan working hours are from 9:30 am to 2:30 pm, Sundays to Thursdays. If this is an emergency, please hold; your call will be diverted to the operations room.",
-      "ar": "شكراً لاتصالك بخدمة عملاء بلايا. ساعات العمل خلال شهر رمضان المبارك من الساعة التاسعة والنصف صباحاً حتى الثانية والنصف مساءً من الأحد إلى الخميس. في حالة الطوارئ برجاء الانتظار، سيتم تحويل مكالمتكم لغرفة العمليات.",
+      "ar": "شكراً لاتصالك بخدمة عملاء Playa. ساعات العمل خلال شهر رمضان المبارك من الساعة التاسعة والنصف صباحاً حتى الثانية والنصف مساءً من الأحد إلى الخميس. في حالة الطوارئ برجاء الانتظار، سيتم تحويل مكالمتكم لغرفة العمليات.",
       "audio": {
         "en": true,
         "ar": true
@@ -368,7 +368,7 @@ window.ivrData = {
     },
     "maintenance": {
       "en": "Thank you for calling Playa Customer Excellence. There are maintenance works at the company that affect the electrical current. To leave us your request, please reach us at the email address: customerexcellence@seashellplaya.com, or please call us within the next business day.",
-      "ar": "شكراً لاتصالك بخدمة عملاء بلايا. توجد حالياً أعمال صيانة بالشركة تؤثر على التيار الكهربائي. لترك طلبك، برجاء التواصل معنا عبر البريد الإلكتروني: customerexcellence@seashellplaya.com، أو الاتصال بنا خلال يوم العمل التالي.",
+      "ar": "شكراً لاتصالك بخدمة عملاء Playa. توجد حالياً أعمال صيانة بالشركة تؤثر على التيار الكهربائي. لترك طلبك، برجاء التواصل معنا عبر البريد الإلكتروني: customerexcellence@seashellplaya.com، أو الاتصال بنا خلال يوم العمل التالي.",
       "audio": {
         "en": true,
         "ar": true
@@ -376,7 +376,7 @@ window.ivrData = {
     },
     "after_hours_sales": {
       "en": "Thank you for calling Playa Sales. Our formal business hours are from 10:00 am to 6:00 pm, Sundays to Thursdays. Please call us again within the next business day.",
-      "ar": "شكراً لاتصالك بمبيعات بلايا. ساعات العمل الرسمية من العاشرة صباحاً حتى السادسة مساءً من الأحد إلى الخميس. برجاء الاتصال بنا مرة أخرى خلال يوم العمل التالي.",
+      "ar": "شكراً لاتصالك بمبيعات Playa. ساعات العمل الرسمية من العاشرة صباحاً حتى السادسة مساءً من الأحد إلى الخميس. برجاء الاتصال بنا مرة أخرى خلال يوم العمل التالي.",
       "audio": {
         "en": true,
         "ar": true
@@ -384,7 +384,7 @@ window.ivrData = {
     },
     "maintenance_sales": {
       "en": "Thank you for calling Playa Sales. There are maintenance works at the company that affect the electrical current. To leave us your request, please reach us at the email address: customerexcellence@seashellplaya.com, or please call us within the next business day.",
-      "ar": "شكراً لاتصالك بمبيعات بلايا. توجد حالياً أعمال صيانة بالشركة تؤثر على التيار الكهربائي. لترك طلبك، برجاء التواصل معنا عبر البريد الإلكتروني: customerexcellence@seashellplaya.com، أو الاتصال بنا خلال يوم العمل التالي.",
+      "ar": "شكراً لاتصالك بمبيعات Playa. توجد حالياً أعمال صيانة بالشركة تؤثر على التيار الكهربائي. لترك طلبك، برجاء التواصل معنا عبر البريد الإلكتروني: customerexcellence@seashellplaya.com، أو الاتصال بنا خلال يوم العمل التالي.",
       "audio": {
         "en": true,
         "ar": true
@@ -392,7 +392,7 @@ window.ivrData = {
     },
     "after_hours_sales_ramadan": {
       "en": "Thank you for calling Playa Sales. Our Ramadan working hours are from 9:30 am to 2:30 pm, Sundays to Thursdays. Please call us again within the next business day.",
-      "ar": "شكراً لاتصالك بمبيعات بلايا. ساعات العمل خلال شهر رمضان المبارك من الساعة التاسعة والنصف صباحاً حتى الثانية والنصف مساءً من الأحد إلى الخميس. برجاء الاتصال بنا مرة أخرى خلال يوم العمل التالي.",
+      "ar": "شكراً لاتصالك بمبيعات Playa. ساعات العمل خلال شهر رمضان المبارك من الساعة التاسعة والنصف صباحاً حتى الثانية والنصف مساءً من الأحد إلى الخميس. برجاء الاتصال بنا مرة أخرى خلال يوم العمل التالي.",
       "audio": {
         "en": true,
         "ar": true
