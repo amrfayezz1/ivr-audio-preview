@@ -76,7 +76,7 @@ window.ivrData = {
     },
     "channel_sales": {
       "en": "For Sales, Resale and Rent, please press 1.",
-      "ar": "للمبيعات وإعادة البيع والتأجير، برجاء الضغط على رقم 1.",
+      "ar": "لإدارة المبيعات وإعادة البيع والتأجير، برجاء الضغط على رقم 1.",
       "audio": {
         "en": true,
         "ar": true
@@ -182,7 +182,7 @@ window.ivrData = {
     },
     "channel_sales": {
       "en": "For Sales, Resale and Rent, please press 1.",
-      "ar": "للمبيعات وإعادة البيع والتأجير، برجاء الضغط على رقم 1.",
+      "ar": "لإدارة المبيعات وإعادة البيع والتأجير، برجاء الضغط على رقم 1.",
       "audio": {
         "en": true,
         "ar": true
@@ -296,7 +296,7 @@ window.ivrData = {
     },
     "channel_sales": {
       "en": "For Sales, Resale and Rent, please press 1.",
-      "ar": "للمبيعات وإعادة البيع والتأجير، برجاء الضغط على رقم 1.",
+      "ar": "لإدارة المبيعات وإعادة البيع والتأجير، برجاء الضغط على رقم 1.",
       "audio": {
         "en": true,
         "ar": true
@@ -410,7 +410,7 @@ window.ivrData = {
     },
     "channel_sales": {
       "en": "For Sales, Resale and Rent, please press 1.",
-      "ar": "للمبيعات وإعادة البيع والتأجير، برجاء الضغط على رقم 1.",
+      "ar": "لإدارة المبيعات وإعادة البيع والتأجير، برجاء الضغط على رقم 1.",
       "audio": {
         "en": true,
         "ar": true
@@ -516,7 +516,7 @@ window.ivrData = {
     },
     "channel_sales": {
       "en": "For Sales, Resale and Rent, please press 1.",
-      "ar": "للمبيعات وإعادة البيع والتأجير، برجاء الضغط على رقم 1.",
+      "ar": "لإدارة المبيعات وإعادة البيع والتأجير، برجاء الضغط على رقم 1.",
       "audio": {
         "en": true,
         "ar": true
@@ -630,7 +630,7 @@ window.ivrData = {
     },
     "channel_sales": {
       "en": "For Sales, Resale and Rent, please press 1.",
-      "ar": "للمبيعات وإعادة البيع والتأجير، برجاء الضغط على رقم 1.",
+      "ar": "لإدارة المبيعات وإعادة البيع والتأجير، برجاء الضغط على رقم 1.",
       "audio": {
         "en": true,
         "ar": true
